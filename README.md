@@ -1,5 +1,3 @@
-# electron
-用electron 打包成桌面应用程序
-npm install
-npm run start
-npm run package
+
+npm install electron-packager -g   
+官网地址https://electronjs.org/docs/api/browser-window
