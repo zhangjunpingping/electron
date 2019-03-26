@@ -1,0 +1,21 @@
+{
+  "name": "helloworldelectron",
+  "version": "1.0.0",
+  "description": "'A test for electron, a desktop tool'",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager ./  helloworld --platform=linux --arch=x64 --out=./app  --electron-version=2.0.5 --overwrite "
+  },
+  "author": "jkwu",
+  "license": "ISC",
+  "keywords": [
+    "Electron",
+    "start",
+    "demo"
+  ],
+  "devDependencies": {
+    "electron": "~2.0.5",
+    "electron-packager": "^12.1.0"
+  }
+}

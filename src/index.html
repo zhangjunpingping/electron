@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+  <html>
+   <head>
+       <meta charset="UTF-8">
+       <title>江苏开放大学</title>
+   </head>
+   <body>
+	   <h1>Hello World!</h1>
+	   <button type="button" id="closebt">close</button>
+   </body>
+ </html>
+<script>
+   var ipc = require('electron').ipcRenderer;
+   document.getElementById('closebt').addEventListener('click', () => {
+      console.log('hello vscode!')
+     ipc.send('window-close');
+  })
+</script>
+
