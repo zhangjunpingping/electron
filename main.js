@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron');
+﻿const {app, BrowserWindow} = require('electron');
 const electron = require('electron')
 const ipc = electron.ipcMain
 let win;
@@ -16,9 +16,9 @@ let windowConfig = {
 function createWindow(){
     win = new BrowserWindow(windowConfig);
     win.maximize();
-   // win.loadURL(`file://${__dirname}/src/index.html`);//加载本地地址
+  win.loadURL(`file://${__dirname}/src/index.html`);//加载本地地址
    //  win.loadURL(`http://210.28.216.105/#/login`);//测试
-    win.loadURL(`http://kaoshiuc.jsou.cn/#/login`);//生产url
+   // win.loadURL(`http://kaoshiuc.jsou.cn/#/login`);//生产url
     // win.loadURL(`http://localhost:8081/`); // 嵌套vue页面关闭窗口,如何关闭 
     
     win.on('close',() => {

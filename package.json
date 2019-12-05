@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-	"package:win": "electron-packager . '地平线' --win32 --out ./dist1 --arch=x64 --app--version=0.1.1 --icon=img/favicon.png --asar"
+	"package:win": "electron-packager . '地平线' --win32 --out ./dist --arch=x64 --app--version=0.1.1 --icon=img/favicon.png --asar",
+	"package:linux": "electron-packager . '地平线' --linux --out ./dist --arch=x64 --app--version=0.1.1 --icon=img/favicon.png --asar"
   },
   "author": "jkwu",
   "license": "ISC",
